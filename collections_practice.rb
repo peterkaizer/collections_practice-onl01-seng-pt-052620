@@ -3,11 +3,11 @@ def sort_array_asc(integers)
 end 
 
 def sort_array_desc(integers)
-  integers.sort {|a,b| b<=>a}
+  integers.sort{|a,b| b<=>a}
 end
 
 def sort_array_char_count(strings)
-  strings.sort {|a,b| a.length<=>b.length}
+  strings.sort{|a,b| a.length<=>b.length}
 end
 
 def swap_ele ments(array)
@@ -19,11 +19,11 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.collect {|arr| arr.delete(arr[2]).insert(2,"$")}
+  array.collect{|arr| arr.delete(arr[2]).insert(2,"$")}
 end
 
 def find_a(array)
-  array.keep_if {|arr| arr[0]=="a"}
+  array.keep_if{|arr| arr[0]=="a"}
 end
 
 def sum_array(array)
@@ -31,5 +31,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect {|arr| arr==array [1] ? arr:arr << "s"}
+  array.collect{|arr| arr==array [1] ? arr:arr << "s"}
 end 
