@@ -3,14 +3,14 @@ def sort_array_asc(integers)
 end 
 
 def sort_array_desc(integers)
-  integers.sort{|a,b| b<=>a}
+  integers.sort {|a,b| b<=>a}
 end
 
 def sort_array_char_count(strings)
-  strings.sort{|a,b| a.length<=>b.length}
+  strings.sort {|a,b| a.length<=>b.length}
 end
 
-def swap_elements(array)
+def swap_ele ments(array)
   array.sort{|a,b| a[1]<=>b[2]}
 end
 
@@ -27,10 +27,9 @@ def find_a(array)
 end
 
 def sum_array(array)
-  #same as array.inject(0){|sum,arr| sum+arr}
-  array.inject(0, :+)
+  array.inject (0, :+)
 end
 
 def add_s(array)
-  array.collect{|arr| arr==array[1] ? arr:arr << "s"}
-end
+  array.collect {|arr| arr==array [1] ? arr:arr << "s"}
+end 
